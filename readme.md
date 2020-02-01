@@ -17,7 +17,7 @@ To view the steps to setup Notion to work with this example view the post at htt
 ### Using the Pre-Configured Script
 
 1. Create a blank page in Notion
-2. Clone this repo `git clone https://github.com/ijjk/notion-blog.git`
+2. Clone this repo `git clone https://github.com/oikwsat/notion-blog.git`
 3. Install dependencies `cd notion-blog && yarn`
 4. Run script to create table `NOTION_TOKEN='token' BLOG_INDEX_ID='new-page-id' node scripts/create-table.js` See [here](#getting-blog-index-and-token) for finding the id for the new page
 
@@ -58,11 +58,11 @@ To get your Notion token, open Notion and look for the `token_v2` cookie.
 
 Deploy your own Notion blog with ZEIT.
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/ijjk/notion-blog/tree/master)
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/oikwsat/notion-blog/tree/master)
 
 or
 
-1. Clone this repo `git clone https://github.com/ijjk/notion-blog.git`
+1. Clone this repo `git clone https://github.com/oikwsat/notion-blog.git`
 2. Add your `NOTION_TOKEN` and `BLOG_INDEX_ID` as a secret to Now `now secrets add notion-token <token> && now secrets add blog-index-id <blog-index>`. See [here](#getting-blog-index-and-token) for how to find these values
 3. Deploy with `now`
 

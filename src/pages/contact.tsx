@@ -13,7 +13,7 @@ const contacts = [
   {
     Comp: Twitter,
     alt: 'twitter icon',
-    link: 'https://twitter.com/_ijjk',
+    link: 'https://twitter.com/oikwsat',
   },
   {
     Comp: GitHub,
@@ -23,12 +23,12 @@ const contacts = [
   {
     Comp: LinkedIn,
     alt: 'linkedin icon',
-    link: 'https://www.linkedin.com/in/jj-kasper-0b5392166/',
+    link: 'https://www.linkedin.com/in/satoshi-oikawa/',
   },
   {
     Comp: Envelope,
     alt: 'envelope icon',
-    link: 'mailto:jj@jjsweb.site?subject=Notion Blog',
+    link: 'mailto:oikwsat@gmail.com?subject=Notion Blog',
   },
 ]
 
@@ -42,10 +42,7 @@ export default () => (
 
       <h1 style={{ marginTop: 0 }}>Contact</h1>
 
-      <div className={contactStyles.name}>
-        JJ Kasper - Next.js Engineer @{' '}
-        <ExtLink href="https://zeit.co">ZEIT</ExtLink>
-      </div>
+      <div className={contactStyles.name}>Satoshi Oikawa</div>
 
       <div className={contactStyles.links}>
         {contacts.map(({ Comp, link, alt }) => {

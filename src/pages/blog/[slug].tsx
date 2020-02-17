@@ -10,6 +10,7 @@ import getPageData from '../../lib/notion/getPageData'
 import getBlogIndex from '../../lib/notion/getBlogIndex'
 import getNotionUsers from '../../lib/notion/getNotionUsers'
 import { getBlogLink, getDateStr } from '../../lib/blog-helpers'
+import { TwitterTweetEmbed } from 'react-twitter-embed'
 
 // Get the data for each blog post
 export async function unstable_getStaticProps({ params: { slug } }) {
@@ -240,6 +241,15 @@ const RenderPost = ({ post, redirect }) => {
                   )
                 )
               }
+              break
+            case 'tweet':
+              const tweetId = properties.source[0][0].match(/[0-9]+$/)
+              toRender.push(
+                <TwitterTweetEmbed
+                  tweetId={tweetId[0]}
+                  options={{ margin: '0 auto;' }}
+                />
+              )
               break
             default:
               if (

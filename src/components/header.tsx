@@ -19,9 +19,9 @@ export default ({ titlePre = '' }) => {
   return (
     <header className={styles.header}>
       <Head>
-        <title>{titlePre ? `${titlePre} |` : ''} Satoshi Oikawa</title>
-        <meta name="description" content="Satoshi Oikawa's Website" />
-        <meta name="og:title" content="Satoshi Oikawa" />
+        <title>{titlePre ? `${titlePre} |` : ''} oikwsat's Website</title>
+        <meta name="description" content="oikwsat's Website" />
+        <meta name="og:title" content="oikwsat's Website" />
         <meta property="og:image" content={ogImageUrl} />
         <meta name="twitter:site" content="@oikwsat" />
         <meta name="twitter:card" content="summary_large_image" />

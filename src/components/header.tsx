@@ -12,7 +12,7 @@ const navItems: { label: string; page?: string; link?: string }[] = [
   { label: 'Source Code', link: 'https://github.com/oikwsat/notion-blog' },
 ]
 
-const ogImageUrl = 'https://satoshioikawa.com/rockin-works.png'
+const ogImageUrl = 'https://oikawa.dev/rockin-works.png'
 
 export default ({ titlePre = '' }) => {
   const { pathname } = useRouter()

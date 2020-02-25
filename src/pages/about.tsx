@@ -2,14 +2,14 @@ import Header from '../components/header'
 import ExtLink from '../components/ext-link'
 
 import sharedStyles from '../styles/shared.module.css'
-import contactStyles from '../styles/contact.module.css'
+import aboutStyles from '../styles/about.module.css'
 
 import GitHub from '../components/svgs/github'
 import Twitter from '../components/svgs/twitter'
 import Envelope from '../components/svgs/envelope'
 import LinkedIn from '../components/svgs/linkedin'
 
-const contacts = [
+const services = [
   {
     Comp: Twitter,
     alt: 'twitter icon',
@@ -28,24 +28,24 @@ const contacts = [
   {
     Comp: Envelope,
     alt: 'envelope icon',
-    link: 'mailto:oikwsat@gmail.com?subject=Notion Blog',
+    link: 'mailto:oikwsat@gmail.com?subject=contact from oikawa.dev: ',
   },
 ]
 
 export default () => (
   <>
-    <Header titlePre="Contact" />
+    <Header titlePre="About" />
     <div className={sharedStyles.layout}>
-      <div className={contactStyles.avatar}>
-        <img src="/avatar.png" alt="avatar with letters JJ" height={60} />
+      <div className={aboutStyles.avatar}>
+        <img src="/avatar.png" alt="avatar with letters Satoshi" height={60} />
       </div>
 
-      <h1 style={{ marginTop: 0 }}>Contact</h1>
+      <h1 style={{ marginTop: 0 }}>About</h1>
 
-      <div className={contactStyles.name}>Satoshi Oikawa</div>
+      <div className={aboutStyles.name}>Satoshi Oikawa</div>
 
-      <div className={contactStyles.links}>
-        {contacts.map(({ Comp, link, alt }) => {
+      <div className={aboutStyles.links}>
+        {services.map(({ Comp, link, alt }) => {
           return (
             <ExtLink key={link} href={link} aria-label={alt}>
               <Comp height={32} />

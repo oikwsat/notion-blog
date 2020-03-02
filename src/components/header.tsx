@@ -8,8 +8,6 @@ const navItems: { label: string; page?: string; link?: string }[] = [
   { label: 'Home', page: '/' },
   { label: 'Blog', page: '/blog' },
   { label: 'About', page: '/about' },
-  { label: 'Atom', page: '/atom' },
-  { label: 'Source Code', link: 'https://github.com/oikwsat/notion-blog' },
 ]
 
 const ogImageUrl = 'https://oikawa.dev/rockin-works.png'

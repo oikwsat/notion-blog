@@ -40,9 +40,7 @@ export default () => (
         <img src="/avatar.png" alt="avatar with letters Satoshi" height={60} />
       </div>
 
-      <h1 style={{ marginTop: 0 }}>About</h1>
-
-      <div className={aboutStyles.name}>Satoshi Oikawa</div>
+      <h1 style={{ marginTop: 0 }}>Satoshi Oikawa</h1>
 
       <div className={aboutStyles.links}>
         {services.map(({ Comp, link, alt }) => {

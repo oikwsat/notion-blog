@@ -7,6 +7,7 @@ import aboutStyles from '../styles/about.module.css'
 import GitHub from '../components/svgs/github'
 import Twitter from '../components/svgs/twitter'
 import LinkedIn from '../components/svgs/linkedin'
+import Instgram from '../components/svgs/instagram'
 
 const services = [
   {
@@ -23,6 +24,11 @@ const services = [
     Comp: LinkedIn,
     alt: 'linkedin icon',
     link: 'https://www.linkedin.com/in/satoshi-oikawa/',
+  },
+  {
+    Comp: Instgram,
+    alt: 'Instgram icon',
+    link: 'https://www.instagram.com/oikwsat/',
   },
 ]
 

@@ -6,7 +6,6 @@ import aboutStyles from '../styles/about.module.css'
 
 import GitHub from '../components/svgs/github'
 import Twitter from '../components/svgs/twitter'
-import Envelope from '../components/svgs/envelope'
 import LinkedIn from '../components/svgs/linkedin'
 
 const services = [
@@ -24,11 +23,6 @@ const services = [
     Comp: LinkedIn,
     alt: 'linkedin icon',
     link: 'https://www.linkedin.com/in/satoshi-oikawa/',
-  },
-  {
-    Comp: Envelope,
-    alt: 'envelope icon',
-    link: 'mailto:oikwsat@gmail.com?subject=contact from oikawa.dev: ',
   },
 ]
 

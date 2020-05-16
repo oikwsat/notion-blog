@@ -5,9 +5,9 @@ import { useRouter } from 'next/router'
 import styles from '../styles/header.module.css'
 
 const navItems: { label: string; page?: string; link?: string }[] = [
-  { label: 'Home', page: '/' },
-  { label: 'Blog', page: '/blog' },
-  { label: 'About', page: '/about' },
+  { label: 'HOME', page: '/' },
+  { label: 'BLOG', page: '/blog' },
+  { label: 'PROJECTS', page: '/projects' },
 ]
 
 const ogImageUrl = 'https://oikawa.dev/rockin-works.png'

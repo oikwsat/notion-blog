@@ -1,61 +1,18 @@
 import Header from '../components/header'
-import ExtLink from '../components/ext-link'
 
 import sharedStyles from '../styles/shared.module.css'
-import aboutStyles from '../styles/about.module.css'
-
-import GitHub from '../components/svgs/github'
-import Twitter from '../components/svgs/twitter'
-import LinkedIn from '../components/svgs/linkedin'
-import Instgram from '../components/svgs/instagram'
-
-const services = [
-  {
-    Comp: Twitter,
-    alt: 'twitter icon',
-    link: 'https://twitter.com/oikwsat',
-  },
-  {
-    Comp: GitHub,
-    alt: 'github icon',
-    link: 'https://github.com/oikwsat',
-  },
-  {
-    Comp: LinkedIn,
-    alt: 'linkedin icon',
-    link: 'https://www.linkedin.com/in/satoshi-oikawa/',
-  },
-  {
-    Comp: Instgram,
-    alt: 'Instgram icon',
-    link: 'https://www.instagram.com/oikwsat/',
-  },
-]
 
 export default () => (
   <>
-    <Header titlePre="About" />
+    <Header titlePre="PROJECTS" />
     <div className={sharedStyles.layout}>
-      <div className={aboutStyles.avatar}>
-        <img src="/avatar.png" alt="avatar with letters Satoshi" height={60} />
-      </div>
-
-      <h1 style={{ marginTop: 0 }}>Satoshi Oikawa</h1>
-
-      <div className={aboutStyles.links}>
-        {services.map(({ Comp, link, alt }) => {
-          return (
-            <ExtLink key={link} href={link} aria-label={alt}>
-              <Comp height={32} />
-            </ExtLink>
-          )
-        })}
-      </div>
+      <h1>PROJECTS</h1>
 
       <hr></hr>
 
       <div className="explanation">
-        <h3>Softwares</h3>
+        <h2>Softwares</h2>
+        <h3>Android アプリ</h3>
         <ul>
           <li>
             <a
@@ -66,6 +23,12 @@ export default () => (
               Time Progress - Google Play のアプリ
             </a>
           </li>
+        </ul>
+      </div>
+
+      <div className="explanation">
+        <h3>Chrome 拡張機能</h3>
+        <ul>
           <li>
             <a
               href="https://chrome.google.com/webstore/detail/labelcounter-for-trello/eahijelcdannijiaikdpdpjnhcjoblie"
@@ -78,8 +41,11 @@ export default () => (
         </ul>
       </div>
 
+      <hr></hr>
+
       <div className="explanation">
-        <h3>Magazines</h3>
+        <h2>Magazines</h2>
+        <h3>技術評論社</h3>
         <ul>
           <li>
             <a
@@ -108,18 +74,12 @@ export default () => (
         </ul>
       </div>
 
+      <hr></hr>
+
       <div className="explanation">
-        <h3>Links</h3>
+        <h2>Links</h2>
+        <h3>External Sites</h3>
         <ul>
-          <li>
-            <a
-              href="//amzn.to/2e3H0wc"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Amazon
-            </a>
-          </li>
           <li>
             <a
               href="https://medium.com/@oikawa"
@@ -131,11 +91,23 @@ export default () => (
           </li>
           <li>
             <a
-              href="https://github.com/oikwsat/EffectiveJavaScript/raw/master/build/Effective%20JavaScript%20-%20Dynamic%20Scripting.pdf"
+              href="https://qiita.com/oikwsat"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download Effective JavaScript - Dynamic Scripting.pdf
+              Qiita
+            </a>
+          </li>
+        </ul>
+        <h3>Others</h3>
+        <ul>
+          <li>
+            <a
+              href="//amzn.to/2e3H0wc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Amazon
             </a>
           </li>
         </ul>

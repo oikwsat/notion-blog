@@ -27,6 +27,7 @@ export default ({ titlePre = '' }) => {
         <meta name="twitter:image" content={ogImageUrl} />
       </Head>
       <ul>
+          <li>oikawa.dev</li>
         {navItems.map(({ label, page, link }) => (
           <li key={label}>
             {page ? (

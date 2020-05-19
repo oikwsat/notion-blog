@@ -1,5 +1,5 @@
 // commonjs so it can be run without transpiling
-const uuid = require('uuid/v4')
+const { v4: uuidv4 } = require('uuid')
 const fetch = require('node-fetch')
 const {
   BLOG_INDEX_ID: pageId,
@@ -9,18 +9,18 @@ const {
 
 async function main() {
   const userId = await getUserId()
-  const transactionId = () => uuid()
-  const collectionId = uuid()
-  const collectionViewId = uuid()
-  const viewId = uuid()
+  const transactionId = () => uuidv4()
+  const collectionId = uuidv4()
+  const collectionViewId = uuidv4()
+  const viewId = uuidv4()
   const now = Date.now()
-  const pageId1 = uuid()
-  const pageId2 = uuid()
-  const pageId3 = uuid()
+  const pageId1 = uuidv4()
+  const pageId2 = uuidv4()
+  const pageId3 = uuidv4()
   let existingBlockId = await getExistingexistingBlockId()
 
   const requestBody = {
-    requestId: uuid(),
+    requestId: uuidv4(),
     transactions: [
       {
         id: transactionId(),
@@ -349,7 +349,7 @@ async function getExistingexistingBlockId() {
   const id = Object.keys(data ? data.recordMap.block : {}).find(
     id => id !== pageId
   )
-  return id || uuid()
+  return id || uuidv4()
 }
 
 async function getUserId() {

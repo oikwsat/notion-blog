@@ -230,11 +230,7 @@ const RenderPost = ({ post, redirect, preview }) => {
 
           switch (type) {
             case 'page':
-              break
             case 'divider':
-              toRender.push(
-                <hr/>
-              )
               break
             case 'text':
               if (properties) {
